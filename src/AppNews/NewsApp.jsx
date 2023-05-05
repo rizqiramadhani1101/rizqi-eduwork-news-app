@@ -1,4 +1,4 @@
-import React, { Component,img} from 'react';
+import React, { Component} from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -33,7 +33,7 @@ export default class NewsApp extends Component {
           <div className="card-container" key={index}>
             <div className="card-wrapper">
                 <div className="tittle">{article.title}</div>
-                    <img className="img" src={article.urlToImage} alt={article.title}/>
+                    {/* <image className="img" src={article.urlToImage} alt={article.title}/> */}
                     <div className="sub-title">{article.description}</div>
                     <div className="read"><a href={article.url} target="_blank" rel="noreferrer">Read more</a></div>
                 
