@@ -15,7 +15,8 @@ export default class NewsApp extends Component {
   
     fetchArticles = async () => {
       const response = await axios.get(`
-      https://newsapi.org/v2/everything?q=tesla&from=2023-04-05&sortBy=publishedAt&apiKey=814bbb4170e840ac86cd415a9134e13f`);
+      
+https://newsapi.org/v2/everything?q=tesla&from=2023-04-06&sortBy=publishedAt&apiKey=814bbb4170e840ac86cd415a9134e13f`);
       this.setState({ articles: response.data.articles });
     }
   
